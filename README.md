@@ -1,6 +1,6 @@
 # Case_Study
 # Google Data Analytics Case Study
-	Introduction
+	**Introduction**
 
 Welcome to the Cyclistic bike-share analysis case study! In this case study, you will perform many real-world tasks of a junior
 data analyst. You will work for a fictional company, Cyclistic, and meet different characters and team members. In order to
@@ -24,4 +24,10 @@ who purchase annual memberships are Cyclistic members.
 Cyclistic’s finance analysts have concluded that annual members are much more profitable than casual riders. Although the
 pricing flexibility helps Cyclistic attract more customers, Moreno believes that maximizing the number of annual members will
 be key to future growth. Rather than creating a marketing campaign that targets all-new customers, Moreno believes there is a
-very good chance to convert casual riders into members. S
+very good chance to convert casual riders into members.
+
+	Ask Phase
+Three questions will guide the future marketing program:
+1. How do annual members and casual riders use Cyclistic bikes differently?
+2. Why would casual riders buy Cyclistic annual memberships?
+3. How can Cyclistic use digital media to influence casual riders to become members?
