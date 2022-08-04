@@ -257,7 +257,7 @@ For members on August 2021 it started to grow continously to reach its peak on d
 
 *Ride duration for members are relatively low compared to casuals, it could mean members are people who work and they are using the bike to work and casuals are riding longer due to it could be tourists being more calm.
 
-##The act Phase
+## The act Phase
 
 * There could be some type of loyalty points to the people who complete certain amount of hours during the month or certain amount or rides.
 * The marketing campaing should be launched during the end of the year, because there are more people in town
