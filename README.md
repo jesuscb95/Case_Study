@@ -36,7 +36,7 @@ The Cyclistic team has concluded that annual members are much more profitable th
 	The Prepare Phase
 	
 Data Source: 
-The data consists in a period of 12 months from June 2021 to May 2022 of original bike share data was extracted as 12 zipped .csv files st 12 month of original bike share data set from 01/01/2021 to 31/12/2021 was extracted as 12 zipped .csv. 
+The data consists in a period of 12 months from July 2021 to August 2022 of original bike share data was extracted as 12 zipped .csv files st 12 month of original bike share data set from 01/01/2021 to 31/12/2021 was extracted as 12 zipped .csv. 
 *Source(https://divvy-tripdata.s3.amazonaws.com/index.html). The data is made available and licensed by Motivate International Inc under this [license](https://ride.divvybikes.com/data-license-agreement).
 
 Data Organization & Description:
@@ -71,7 +71,7 @@ I used R Studio software to perform cleaning and verification of the data, it's 
 
 	The Analyze Phase
 
-In this phase I started to set up the work environment importing diverse libraries to use in R Studio
+Installing and loading the necessary packages
 
 library(tidyverse)
 library(janitor)
@@ -89,37 +89,32 @@ library(metR)
 
 Importing the data
 
-month_01 <- read.csv("202106-divvy-tripdata.csv")
-month_02 <- read.csv("202107-divvy-tripdata.csv")
-month_03 <- read.csv("202108-divvy-tripdata.csv")
-month_04 <- read.csv("202109-divvy-tripdata.csv")
-month_05 <- read.csv("202110-divvy-tripdata.csv")
-month_06 <- read.csv("202111-divvy-tripdata.csv")
-month_07 <- read.csv("202112-divvy-tripdata.csv")
-month_08 <- read.csv("202201-divvy-tripdata.csv")
-month_09 <- read.csv("202202-divvy-tripdata.csv")
-month_10 <- read.csv("202203-divvy-tripdata.csv")
-month_11 <- read.csv("202204-divvy-tripdata.csv")
-month_12 <- read.csv("202205-divvy-tripdata.csv")
+The selected data consists from the period of July 2021 to August 2022
 
-Compare column names, because every column name should match with the colnames() function
-
-colnames(month_01)
-colnames(month_02)
-colnames(month_03)
-colnames(month_04)
-colnames(month_05)
-colnames(month_06)
-colnames(month_07)
-colnames(month_08)
-colnames(month_09)
-colnames(month_10)
-colnames(month_11)
-colnames(month_12)
+> X202107_divvy_tripdata <- read_csv("Cyclistic/202107-divvy-tripdata.csv")
+> X202108_divvy_tripdata <- read_csv("Cyclistic/202108-divvy-tripdata.csv")
+> X202109_divvy_tripdata <- read_csv("Cyclistic/202109-divvy-tripdata.csv")
+> X202110_divvy_tripdata <- read_csv("Cyclistic/202110-divvy-tripdata.csv")
+> X202111_divvy_tripdata <- read_csv("Cyclistic/202111-divvy-tripdata.csv")
+> X202112_divvy_tripdata <- read_csv("Cyclistic/202112-divvy-tripdata.csv")
+> X202201_divvy_tripdata <- read_csv("Cyclistic/202201-divvy-tripdata.csv")
+> X202202_divvy_tripdata <- read_csv("Cyclistic/202202-divvy-tripdata.csv")
+> X202203_divvy_tripdata <- read_csv("Cyclistic/202203-divvy-tripdata.csv")
+> X202204_divvy_tripdata <- read_csv("Cyclistic/202204-divvy-tripdata.csv")
+> X202205_divvy_tripdata <- read_csv("Cyclistic/202205-divvy-tripdata.csv")
+> X202206_divvy_tripdata <- read_csv("Cyclistic/202206-divvy-tripdata.csv")
 
 Then the 12 months are merged into 1 big dataframe
 
-all_trips <- bind_rows(month_01, month_02, month_03, month_04, month_05, month_06, month_07, month_08, month_09, month_10, month_11, month_12)
+all_trips <- bind_rows(X202107_divvy_tripdata, X202108_divvy_tripdata, X202109_divvy_tripdata, X202110_divvy_tripdata, X202111_divvy_tripdata, X202112_divvy_tripdata, X202201_divvy_tripdata, X202202_divvy_tripdata, X202203_divvy_tripdata, X202204_divvy_tripdata, X202205_divvy_tripdata, X202206_divvy_tripdata)
+
+Clean the data and organize it to prepare for analysis
+Inspect the new table
+
+colnames(all_trips)
+dim(all_trips)
+str(all_trips)
+head(all_trips)
 
 	
 
