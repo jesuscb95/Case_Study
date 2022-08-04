@@ -9,7 +9,7 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
+#### Special thanks to https://github.com/elmaandimahmoud it help me a lot to comprehend what I needed to do.
 ## Introduction
 
 Hi My name is Jesus Carreon, I will perform a case study doing many real world tasks of a junior data analyst, the name of the company is Cyclistic, where you will get insight of the key stakeholders and team members.
